@@ -1,11 +1,5 @@
 import { AgeByNatureGoldEN, AgeByNatureGoldES } from '../assets/imgs/shared';
-import {
-  hojaLarga,
-  orange,
-  hojasCierre,
-  NaturesGodParents,
-  NaturesGodParentsES,
-} from '../assets/imgs/sostenibilidad';
+import { hojaLarga, orange, hojasCierre, NaturesGodParents, NaturesGodParentsES } from '../assets/imgs/sostenibilidad';
 import { VideoComp } from '../components';
 import { useTranslation } from 'react-i18next';
 
@@ -36,10 +30,10 @@ export const Sustainability = () => {
       />
 
       <div className="sm:flex sm:my-52 my-20 justify-center items-center 2xl:gap-40 xl:gap-20 gap-10 sm:px-0 px-10">
-          <VideoComp
-            autoPlay={false}
-            video={'https://roncentenario.blob.core.windows.net/multimedia/Video padrinos.MP4'}
-          />
+        <VideoComp
+          autoPlay={false}
+          video={'https://roncentenario.blob.core.windows.net/multimedia/Video padrinos.mp4'}
+        />
         <img
           src={i18n.language === 'sp' ? NaturesGodParentsES : NaturesGodParents}
           alt="Natures God Parents"

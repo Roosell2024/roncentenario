@@ -34,13 +34,13 @@ export const Cocktails = () => {
   const filterOptions = (options: CocktailItem[]) => {
     return options.filter((o) => {
       if (flavorSelected && productSelected) {
-        return o.flavor === flavorSelected && o.ingredients.filter((i) => i.name === productSelected).length !== 0;
+        return o.flavor.toUpperCase() === flavorSelected.toUpperCase() && o.ingredients.filter((i) => i.name.toUpperCase() === productSelected.toUpperCase()).length !== 0;
       }
       if (flavorSelected) {
-        return o.flavor === flavorSelected;
+        return o.flavor.toUpperCase() === flavorSelected.toUpperCase();
       }
       if (productSelected) {
-        return o.ingredients.filter((i) => i.name === productSelected).length !== 0;
+        return o.ingredients.filter((i) => i.name.toUpperCase() === productSelected.toUpperCase()).length !== 0;
       }
       return true;
     });
