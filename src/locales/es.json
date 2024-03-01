@@ -19,7 +19,7 @@
             "aging": "N/A"
         },
         "anejo_claro": {
-            "description": "Único Ron de la familia Centenario que tiene triple filtración, con un tratamiento  carbón activo cuidadosamente seleccionado para que solo elimine color y deje integro su color y suave sabor. Es un producto diseñado  especialmente para su uso en coctelería.",
+            "description": "Único Ron de la familia Centenario que tiene triple filtración, con un tratamiento  carbón activo cuidadosamente seleccionado para que solo elimine color y deje íntegro su color y suave sabor. Es un producto diseñado  especialmente para su uso en coctelería.",
             "nosing": "Destaca madera y vainilla",
             "flavor": "Suave al paladar, con notas a  vainilla, ligero dulzor y con característico sabor a roble.",
             "aging": "Sistema Tradicional"
@@ -28,34 +28,34 @@
             "description": "Añejado en barriles de roble blanco americano que antes del ron contuvieron Whisky Escocés, lo que le hace que Ron Centenario Oro destaque con notas maderosas y afrutadas, conviertendolo en un Ron perfecto para el consumo de tragos ligados.",
             "nosing": "Destaca madera y es muy frutal.",
             "flavor": "Madera, con notas frutales y frescas.",
-            "aging": "Traditional System"
+            "aging": "Sistema Tradicional"
         },
         "5_volcanos": {
-            "description": "Es un homenaje a los 5 volcanes activos de Costa Rica, con carácterísticas únicas de frutos rojos, vainilla y roble, es un ron con gran suavidad, que permite tomarlo en las rocas o mezclado para coctelería.",
+            "description": "Es un homenaje a los 5 volcanes activos de Costa Rica, con características únicas de frutos rojos, vainilla y roble, es un ron con gran suavidad, que permite tomarlo en las rocas o mezclado para coctelería.",
             "nosing": "Sutiles aromas a Roble y Vainilla con un final de frutos rojos.",
             "flavor": "Producto de cuerpo medio, con una entrada suave en boca que permite detectar los sabores a frutos rojos, vainilla y madera.",
             "aging": "Sistema Tradicional"
         },
         "7_provinces": {
-            "description": "Representando la cultura y tradiciones de las 7 provincias de Costa Rica, Ron Centenario 7 Provincias Añejo Especial es el Ron con el que inicio la historia de la marca Centenario. Su perfecto balance entre el sabor frutal y la madera convierten Ron Centenario 7 Provincias en un tributo al mejor ron de Costa Rica.",
+            "description": "Representando la cultura y tradiciones de las 7 provincias de Costa Rica, Ron Centenario 7 Provincias Añejo Especial es el Ron con el que inició la historia de la marca Centenario. Su perfecto balance entre el sabor frutal y la madera convierten Ron Centenario 7 Provincias en un tributo al mejor ron de Costa Rica.",
             "nosing": "Agradables aromas a miel, manzana roja y  notas de madera.",
             "flavor": "Ligeramente dulce, madera, sabores frutales y post gusto largo.",
             "aging": "Sistema Tradicional"
         },
         "9_degrees": {
             "description": "9 grados latitud norte es la ubicación de la única bodega de añejamiento en Costa Rica, casa de Ron Centenario, esta locación está rodeada de un corredor biológico inter urbano con gran biodiversidad, donde coexisten especies de flora y fauna, con el clima ideal para añejar el mejor ron de Costa Rica, logrando rones con notas cítricas y acarameladas.",
-            "nosing": "Destaca madera, especies, notas cítricas y acaramenlas. Tambien se percibe vainilla.",
-            "flavor": "Notas acarameladas que se entrelanzan a la perfección con notas citricas, especias y madera, haciendo suave y muy agradable.",
+            "nosing": "Destaca madera, especies, notas cítricas y acarameladas. También se percibe vainilla.",
+            "flavor": "Notas acarameladas que se entrelazan a la perfección con notas cítricas, especias y madera, haciendo suave y muy agradable.",
             "aging": "Sistema Tradicional"
         },
         "12_secrets": {
-            "description": "Añejado en barricas de roble blanco americano que primero contuvieron whisky escoces, representa lo mejor de nuestro sistema de Añejamiento Tradicional. Ron Centenario 12 Secretos posee un dulzor balanceado, donde destaca vainilla y  permanencia en boca única.  Con fuertes notas a frutos rojos y cuerpo equilibrado, que nos activa todos los sentidos para un recorrido perfecto.Un Ron para disfrutas solo o en las rocas. ",
+            "description": "Añejado en barricas de roble blanco americano que primero contuvieron whisky escocés, representa lo mejor de nuestro sistema de Añejamiento Tradicional. Ron Centenario 12 Secretos posee un dulzor balanceado, donde destaca vainilla y  permanencia en boca única.  Con fuertes notas a frutos rojos y cuerpo equilibrado, que nos activa todos los sentidos para un recorrido perfecto. Un Ron para disfrutar solo o en las rocas. ",
             "nosing": "Agradable aroma de frutos rojos maduros y madera.",
             "flavor": "Ligeramente dulce con notas predominantes de vainilla, frutos rojos maduros, agradable presencia de madera y cuerpo equilibrado, con larga permanencia en boca.",
             "aging": "Sistema Tradicional"
         },
         "20_years": {
-            "description": "Este ron se desarrolla en el 2005 para celebrar el vigésimo aniversario de la marca Ron Centenario. Elaborado bajo el sistema de añejamiento continuo en barriles de roble blanco americano que contuvieron whisky escoces, con rones desde 6 y hasta 20 años, lo convierten en el ron más premiado de la Familia Centenario. Su suavidad y elegancia hacen que destaque el roble, frutos rojos, notas cítricas de naranja y una sutil vainilla.",
+            "description": "Este ron se desarrolla en el 2005 para celebrar el vigésimo aniversario de la marca Ron Centenario. Elaborado bajo el sistema de añejamiento continuo en barriles de roble blanco americano que contuvieron whisky escocés, con rones desde 6 y hasta 20 años, lo convierten en el ron más premiado de la Familia Centenario. Su suavidad y elegancia hacen que destaque el roble, frutos rojos, notas cítricas de naranja y una sutil vainilla.",
             "nosing": "Con una característica única para los productos de la línea Premium de Ron Centenario: el efecto retro nasal, lo que significa que con solo olerlo lo saboreamos empezamos este maravilloso recorrido sensorial. Muy frutal, sutil vainilla y madera.",
             "flavor": "Suave, delicado, una sutil vainilla, maderoso y notas cítricas.",
             "aging": "Proceso de añejamiento continuo en barriles"
@@ -63,7 +63,7 @@
         "25_years": {
             "description": "Está creado con nuestra Gran Reserva de rones seleccionados de 6 y hasta 25 años, bajo el proceso de añejamiento continuo en barriles de roble blanco americano que contuvieron Whisky Escocés. Destaca madera, frutos verdes y se perciben notas especiadas. Con larga permanencia en boca y una característica única de este producto que es seco al paladar.",
             "nosing": "Con una característica única para los productos de la línea Premium de Ron Centenario: el efecto retro nasal, lo que significa que con solo olerlo lo saboreamos empezamos este maravilloso recorrido sensorial. Destacan especies, frutos verdes como manzana y madera.",
-            "flavor": "Destaca madera, ligeramente dulce, con una armonia perfecta entre las frutas verdes y notas especiadas. Con una característica que lo distingue que es seco al paladar.",
+            "flavor": "Destaca madera, ligeramente dulce, con una armonía perfecta entre las frutas verdes y notas especiadas. Con una característica que lo distingue que es seco al paladar.",
             "aging": "Proceso de añejamiento continuo en barriles"
         },
         "30_years": {
@@ -106,7 +106,7 @@
         "introduction": "Ron Centenario está concebido desde el alma misma de la madre tierra. Se elabora con agua pura y cristalina de montaña y se mezcla en plena selva tropical de Costa Rica, en barricas de roble blanco americano que antiguamente contenían whisky escocés. Conservado y envejecido en un lugar estratégico, rodeado de ríos y naturaleza para brindar el equilibrio perfecto entre frescura y humedad. Creado en armonía con nuestra biodiversidad, está protegido por la fauna local y perfeccionado en una bodega de ron única. Por todas estas razones podemos decir con orgullo que somos el Único Ron en Costa Rica “Envejecido por la Naturaleza”."
     },
     "cocktails": {
-        "introduction":"Desde los más elaborados cócteles hasta las mezclas que hacemos en casa para disfrutar con amigos y seres queridos, Ron Centenario es tu compañía perfecta para disfrutar del mundo de la coctelería.\nRecorre con nosotros por el mundo de la coctelería Tiki, los grandes clásicos reinventados a nuestro estilo y los cocteles Añejados por la Naturaleza.",
+        "introduction":"Desde los más elaborados cócteles hasta las mezclas que hacemos en casa para disfrutar con amigos y seres queridos, Ron Centenario es tu compañía perfecta para disfrutar del mundo de la coctelería.\nRecorre con nosotros por el mundo de la coctelería Tiki, los grandes clásicos reinventados a nuestro estilo y los cócteles Añejados por la Naturaleza.",
         "find_cocktail_style": "Encuentra tu estilo de cóctel",
         "by_product": "Por producto",
         "by_flavor": "Por perfil de sabor",
@@ -203,8 +203,8 @@
         "tiki_glass_highball_glass": "Vaso Tiki o Vaso Highball",
         "mint_spring": "Brote de Hierba Buena",
         "centenario_homemade_allspice_dram": "Allspice Dram",
-        "passion_fruit_syrup": "Sirope de Maracuya",
-        "demerara_syrup": "Sirope de Azucar Moreno",
+        "passion_fruit_syrup": "Sirope de Maracuyá",
+        "demerara_syrup": "Sirope de Azúcar Moreno",
         "flamed_lime_shell_cinnamon": "Canela flambeada sobre un cascaron de Lima",
         "granadine":"Granadina",
         "centenario_homemade_falernum": "Falernum",
@@ -271,17 +271,17 @@
       "news_data": {
         "inGermany": {
           "title": "Dobles medallas de Oro para Ron Centenario en Alemania ",
-          "text": "La prestigiosa competencia internacional de Licores y Destilados “Meininger´s International Spirits Awards” otorgó durante Julio, 2023 dobles premiaciones para Ron Centenario, premiando a Ron Centenario 20 Fundación y Ron Centenario 12 Secretos con una medalla de Oro para cada uno, reafirmando una vez más la gran calidad que Ron Centenario exporta desde Costa Rica para el mundo. \nCon uno de los panales de jueces más exigentes a nivel mundial, estas medallas otorgadas por el IWS colocan a Centenario como uno de los Rones de mayor prestigio a nivel mundial y le brindan plena confianza a los consumidores y amantes del Ron en todo el mundo para que consuman este delicioso tesoro costarricense.",
+          "text": "La prestigiosa competencia internacional de Licores y Destilados “Meininger´s International Spirits Awards” otorgó durante Julio, 2023 dobles premiaciones para Ron Centenario, premiando a Ron Centenario 20 Fundación y Ron Centenario 12 Secretos con una medalla de Oro para cada uno, reafirmando una vez más la gran calidad que Ron Centenario exporta desde Costa Rica para el mundo. \nCon uno de los paneles de jueces más exigentes a nivel mundial, estas medallas otorgadas por el IWS colocan a Centenario como uno de los Rones de mayor prestigio a nivel mundial y le brindan plena confianza a los consumidores y amantes del Ron en todo el mundo para que consuman este delicioso tesoro costarricense.",
           "date": "San José, 14-02-2024"
         },
         "inItaly": {
           "title": "Ron Centenario enamora al mercado Italiano ",
-          "text": "Durante el pasado 26 de enero del 2024, una delegación de Ron Centenario fue participe de la reunión anual de ventas del distribuidor de Licores y Destilados Rinaldi 1957 llevada cabo en Bologna, Italia. \nLa delegación integrada por Dianne Medrano Gerente General, Jeannette Coto Gerente de Mercadeo Internacional, Ericka Pereira Ejecutiva de Negocios Internacionales, Miguel Sequeira Embajador Global de la Marca y Santiago Rocha Asesor de Negocios, expuso a todos los participantes toda la magia detrás de Ron Centenario. \nEn la sesión participaron más de 150 miembros de la fuerza de ventas de Rinaldi 1957, en la cual cada uno recibió como obsequio de la marca un Tasting Set que incluye una muestra de 50 ml de las presentaciones de Ron Centenario 9 Grados, 12 Secretos, 20 Fundación, 25 Aniversario y 30 Aniversario. \nEsta reunión de vendedores fue la ocasión perfecta para dar a conocer Ron Centenario a la fuerza de Ventas que estará a cargo de colocar Ron Centenario y posicionarla dentro del mercado italiano.",
+          "text": "Durante el pasado 26 de enero del 2024, una delegación de Ron Centenario fue partícipe de la reunión anual de ventas del distribuidor de Licores y Destilados Rinaldi 1957 llevada a cabo en Bologna, Italia. \nLa delegación integrada por Dianne Medrano Gerente General, Jeannette Coto Gerente de Mercadeo Internacional, Ericka Pereira Ejecutiva de Negocios Internacionales, Miguel Sequeira Embajador Global de la Marca y Santiago Rocha Asesor de Negocios, expuso a todos los participantes toda la magia detrás de Ron Centenario. \nEn la sesión participaron más de 150 miembros de la fuerza de ventas de Rinaldi 1957, en la cual cada uno recibió como obsequio de la marca un Tasting Set que incluye una muestra de 50 ml de las presentaciones de Ron Centenario 9 Grados, 12 Secretos, 20 Fundación, 25 Aniversario y 30 Aniversario. \nEsta reunión de vendedores fue la ocasión perfecta para dar a conocer Ron Centenario a la fuerza de Ventas que estará a cargo de colocar Ron Centenario y posicionarla dentro del mercado italiano.",
           "date": "San José, 14-02-2024"
         },
         "inJapon": {
           "title": "Ron Centenario brilla y conquista el mercado Japonés",
-          "text": "Durante el pasado mes de Mayo, 2023 la prestigiosa competencia de destilados “Tokyo Whisky & Spirits Competition (TWSC)” condecoro a Ron Centenario con el galardón “Superior Gold” en la categoría de sistema Solera al producto Ron Centenario 30 Aniversario. \nEste reconomiento premia la gran calidad de Ron Centenario y excelente trabajo de su Maestra Ronera Susana Masis, quien es la encargada de formular y elaborar el único Ron “Añejado por la Naturaleza” \nEl TWSC es el único concurso en Japón que juzga whisky y destilados de todo el mundo con el delicado sabor de Japón. En el primer concurso celebrado en 2019, alrededor de 500 botellas de whisky y bebidas espirituosas de Japón y de todo el mundo fueron juzgadas por unos 200 jueces familiarizados con el whisky y las bebidas espirituosas de todo Japón. Con el profundo conocimiento y la pasión de los amantes y expertos del whisky y las bebidas espirituosas de Japón, nuestro objetivo es evaluar el whisky y las bebidas espirituosas de todo el mundo y promover ampliamente el whisky y las bebidas espirituosas de alta calidad tanto en Japón como en el extranjero.",
+          "text": "Durante el pasado mes de Mayo, 2023 la prestigiosa competencia de destilados “Tokyo Whisky & Spirits Competition (TWSC)” condecoró a Ron Centenario con el galardón “Superior Gold” en la categoría de sistema Solera al producto Ron Centenario 30 Aniversario. \nEste reconocimiento premia la gran calidad de Ron Centenario y excelente trabajo de su Maestra Ronera Susana Masis, quien es la encargada de formular y elaborar el único Ron “Añejado por la Naturaleza” \nEl TWSC es el único concurso en Japón que juzga whisky y destilados de todo el mundo con el delicado sabor de Japón. En el primer concurso celebrado en 2019, alrededor de 500 botellas de whisky y bebidas espirituosas de Japón y de todo el mundo fueron juzgadas por unos 200 jueces familiarizados con el whisky y las bebidas espirituosas de todo Japón. Con el profundo conocimiento y la pasión de los amantes y expertos del whisky y las bebidas espirituosas de Japón, nuestro objetivo es evaluar el whisky y las bebidas espirituosas de todo el mundo y promover ampliamente el whisky y las bebidas espirituosas de alta calidad tanto en Japón como en el extranjero.",
           "date": "San José, 14-02-2024"
         }
       }
@@ -297,7 +297,7 @@
     "traditional_aging_system": {
         "title": "Sistema de Añejamiento Tradicional",
         "paragraph1": "Previo a introducir nuestros rones pesados y livianos en las barricas de Roble Blanco Americano, las cuales previamente añejaron Whisky Escocés, a estos se les reduce la graduación alcohólica, aproximadamente a 60% AVB, con el objetivo de reducir el efecto del “Angel Share” también conocida como “Porción de los Ángeles”.",
-        "paragraph2": "Posteriormente los rones pesados y livianos se introducen en las barricas de manera separada y en ellas reposaran el tiempo requerido para su maduración, dependiendo de la edad que nuestra maestra ronera requiera.",
+        "paragraph2": "Posteriormente los rones pesados y livianos se introducen en las barricas de manera separada y en ellas reposarán el tiempo requerido para su maduración, dependiendo de la edad que nuestra maestra ronera requiera.",
         "paragraph3": "Una vez que este proceso finaliza, los rones se extraen de las barricas y se mezclan para dar vida y sabor a cada una de nuestras presentaciones. Cuando el “Blending” está listo, utilizando agua desmineralizada a través de Osmosis Inversa, el producto se embotella a la graduación alcohólica que las regulaciones de su mercado de destino lo indiquen.",
         "paragraph4": "Las presentaciones de Ron Centenario que se añejan bajo este sistema son:",
         "alcohol": "Alcohol al 96%",
