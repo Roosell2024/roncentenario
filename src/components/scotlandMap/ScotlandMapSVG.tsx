@@ -5,8 +5,8 @@ import { useTransition } from 'transition-hook';
 const standardClasses =
   'before:border-t-2 before:border-dashed before:border-t-green-100 sm:after:absolute after:w-4 after:h-4 after:bg-green-100 after:rounded-full before:top-[0.9rem] after:top-[0.45rem]';
 
-const leftLine = `${standardClasses} before:right-[25rem] after:-left-5`;
-const rightLine = `${standardClasses} before:left-[14rem] after:left-[13rem]`;
+  const leftLine = `${standardClasses} before:left-[14rem] after:left-[13rem]`;
+  const rightLine = `${standardClasses} after:-left-5`;
 
 const textHoverStandardClasses = 'cursor-default fill-[#403D3D] ';
 const pathHoverStandardClasses = 'cursor-default stroke-[#403D3D] stroke-1';
@@ -14,28 +14,28 @@ const pathHoverStandardClasses = 'cursor-default stroke-[#403D3D] stroke-1';
 const data = {
   highlands: {
     text: 'our_history.highlands',
-    lineClasses: `before:w-[4.6rem] ${leftLine}`,
-    positionTooltip: { left: 'auto', top: '18rem', right: '-27rem' },
+    lineClasses: `before:w-[4.6rem] before:right-[10rem] ${rightLine}`,
+    positionTooltip: { left: 'auto', top: '18rem', right: '-12rem' },
     pathHoverClasses: `fill-[#DCBF6F] ${pathHoverStandardClasses}`,
     textHoverClasses: `${textHoverStandardClasses}`,
   },
   lowlands: {
     text: 'our_history.lowlands',
-    lineClasses: `before:w-[5rem] ${leftLine}`,
-    positionTooltip: { left: 'auto', top: '32rem', right: '-27rem' },
+    lineClasses: `before:w-[5rem] before:right-[14rem] ${rightLine}`,
+    positionTooltip: { left: 'auto', top: '32rem', right: '-16rem' },
     pathHoverClasses: `fill-[#F2DEA9] ${pathHoverStandardClasses}`,
     textHoverClasses: `${textHoverStandardClasses}`,
   },
   speyside: {
     text: 'our_history.speyside',
-    lineClasses: `before:w-[7.5rem] ${leftLine}`,
-    positionTooltip: { left: 'auto', top: '12rem', right: '-27rem' },
+    lineClasses: `before:w-[7.5rem] before:right-[10rem] ${rightLine}`,
+    positionTooltip: { left: 'auto', top: '12rem', right: '-12rem' },
     pathHoverClasses: `fill-[#FFF1CA] ${pathHoverStandardClasses}`,
     textHoverClasses: `${textHoverStandardClasses}`,
   },
   islay: {
     text: 'our_history.islay',
-    lineClasses: `before:w-[4.4rem] ${rightLine}`,
+    lineClasses: `before:w-[4.4rem] ${leftLine}`,
     positionTooltip: { left: '-16rem', top: '29.5rem', right: 'auto' },
     pathHoverClasses: `fill-[#DCBF6F] ${pathHoverStandardClasses}`,
     textHoverClasses: '',
@@ -64,7 +64,7 @@ export const ScotlandMapSVG = () => {
     <div className="w-[500px] h-[700px] relative sm:mt-0 mt-40">
       {shouldMount && (
         <div
-          className={`sm:absolute w-96 text-green-100 sm:before:absolute ${elementSelected?.lineClasses}`}
+          className={`sm:absolute w-fit text-green-100 sm:before:absolute ${elementSelected?.lineClasses}`}
           style={{
             ...elementSelected?.positionTooltip,
             transition: '.3s',
