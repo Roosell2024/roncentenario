@@ -45,14 +45,14 @@ export const HomePage = () => {
           >
             {slider && (
               <div className="sm:inline-flex sm:text-left text-white-50 sm:-ml-36">
-                <img src={slider.img} alt={slider.title} className="sm:-mt-10 sm:h-md:w-[350px] sm:h-sm:w-[300px] sm:w-[250px] sm:mr-10 w-24 sm:block inline-block" />
+                <img src={slider.img} alt={slider.title} className="sm:-mt-10 sm:h-md:w-[350px] sm:h-sm:w-[250px] sm:h-sm:h-fit sm:w-[250px] sm:mr-10 w-24 sm:block inline-block" />
                 <div className="sm:w-[28rem] sm:px-0 px-10">
-                  <h2 className="font-bold sm:h-sm:text-5xl text-3xl sm:h-sm:my-7 my-3 uppercase drop-shadow-regular">
+                  <h2 className="font-bold sm:h-sm:text-5xl text-3xl sm:h-md:my-7 sm:h-sm:my-5 my-3 uppercase drop-shadow-regular">
                     {slider.title}
                   </h2>
-                  <p className="text-justify drop-shadow-regular h-sm:text-lg min-h-[225px]">{t(slider.description)}</p>
+                  <p className="text-justify drop-shadow-regular h-md:text-lg sm:h-md:min-h-[225px] sm:h-sm:min-h-[225px] min-h-[225px]">{t(slider.description)}</p>
 
-                  <div className="flex items-center gap-4 mt-8">
+                  <div className="flex items-center gap-4 md:h-md:mt-16 md:h-sm:mt-4">
                     <img src={slider.medal} alt={`${slider.title} medal`} className="w-32" />
                     <h5 className="font-bold text-4xl w-60 sm:text-green-100 text-gold uppercase">
                       {t('medals_awards')}
@@ -83,12 +83,12 @@ export const HomePage = () => {
               }[stage],
             }}
           >
-            <img src={nextSlider.img} alt={nextSlider.title} className="-mt-16 h-sm:xl:w-52 h-sm:w-44 w-36" />
+            <img src={nextSlider.img} alt={nextSlider.title} className="-mt-16 h-md:xl:w-56 h-sm:xl:w-40 h-md:w-44 w-36" />
           </div>
         ))}
       </div>
       <button
-        className="absolute top-40 h-md:top-72 h-sm:top-56 right-0 2xl:left-[60rem] xl:left-[55rem] sm:left-[45rem] mx-auto w-fit"
+        className="absolute top-32 h-md:top-64 h-sm:top-48 right-0 2xl:h-md:left-[60rem] xl:h-md:left-[55rem] sm:left-[45rem] mx-auto w-fit"
         onClick={handleNext}
         type="button"
       >

@@ -5,10 +5,10 @@ export const Events = () => {
   const { t } = useTranslation();
   return (
     <div className="flex flex-col justify-start mt-56">
-      <div className="sm:w-1/4 sm:ml-40">
+      <div className="sm:w-1/4 sm:h-md:ml-40">
         <h1 className="uppercase text-5xl w-52 mt-16 font-extrabold text-green-300">{t('our_world.events')}</h1>
       </div>
-      <div className="w-full sm:ml-96 transform scale-110">
+      <div className="w-full sm:h-md:ml-96 ml-56 transform scale-110">
         <EventSlider />
       </div>
     </div>

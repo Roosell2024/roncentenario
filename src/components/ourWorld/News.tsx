@@ -7,7 +7,7 @@ export const News = () => {
   const { t } = useTranslation();
   return (
     <div className="flex flex-col justify-start mt-56">
-      <div className="sm:w-1/4 sm:ml-40">
+      <div className="sm:w-1/4 sm:h-md:ml-40">
         <h1 className="uppercase text-5xl w-52 mt-16 font-extrabold text-green-300">{t('our_world.news')}</h1>
         <img
           src={LeafsIconC}
@@ -15,7 +15,7 @@ export const News = () => {
           className="w-96 h-96 mix-blend-darken -scale-x-90 rotate-[90deg] absolute -left-[10rem] top-[92%] sm:block hidden"
         />
       </div>
-      <div className="w-full sm:ml-96 transform scale-110">
+      <div className="w-full sm:h-md:ml-96 ml-56 transform scale-110">
         <NewSlider />
       </div>
     </div>

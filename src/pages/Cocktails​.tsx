@@ -14,7 +14,7 @@ export const Cocktails = () => {
     'Ron Centenario Añejo Claro',
     'Ron Centenario Oro',
     'Ron Centenario 5 Volcanes',
-    'Ron Centenario 7 Provincias ',
+    'Ron Centenario 7 Provincias',
     'Ron Centenario 9 Grados',
     'Ron Centenario 12 Secretos',
     'Ron Centenario 20',

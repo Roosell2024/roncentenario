@@ -14,22 +14,22 @@ const pathHoverStandardClasses = 'cursor-default stroke-[#403D3D] stroke-1';
 const data = {
   highlands: {
     text: 'our_history.highlands',
-    lineClasses: `before:w-[4.6rem] before:right-[10rem] ${rightLine}`,
-    positionTooltip: { left: 'auto', top: '18rem', right: '-12rem' },
+    lineClasses: `before:w-[2.1rem] before:right-[14.5rem] ${rightLine}`,
+    positionTooltip: { left: 'auto', top: '18rem', right: '-14rem' },
     pathHoverClasses: `fill-[#DCBF6F] ${pathHoverStandardClasses}`,
     textHoverClasses: `${textHoverStandardClasses}`,
   },
   lowlands: {
     text: 'our_history.lowlands',
-    lineClasses: `before:w-[5rem] before:right-[14rem] ${rightLine}`,
+    lineClasses: `before:w-[7rem] before:right-[12rem] ${rightLine}`,
     positionTooltip: { left: 'auto', top: '32rem', right: '-16rem' },
     pathHoverClasses: `fill-[#F2DEA9] ${pathHoverStandardClasses}`,
     textHoverClasses: `${textHoverStandardClasses}`,
   },
   speyside: {
     text: 'our_history.speyside',
-    lineClasses: `before:w-[7.5rem] before:right-[10rem] ${rightLine}`,
-    positionTooltip: { left: 'auto', top: '12rem', right: '-12rem' },
+    lineClasses: `before:w-[5.5rem] before:right-[14rem] ${rightLine}`,
+    positionTooltip: { left: 'auto', top: '12rem', right: '-14rem' },
     pathHoverClasses: `fill-[#FFF1CA] ${pathHoverStandardClasses}`,
     textHoverClasses: `${textHoverStandardClasses}`,
   },
@@ -44,9 +44,9 @@ const data = {
 
 export const ScotlandMapSVG = () => {
   const { t } = useTranslation();
-  const [onOff, setOnOff] = useState(false);
+  const [onOff, setOnOff] = useState(true);
   const { stage, shouldMount } = useTransition(onOff, 300);
-  const [nameSelected, setNameSelected] = useState('');
+  const [nameSelected, setNameSelected] = useState('lowlands');
 
   const handleMouseEnter = (name: string) => () => {
     setNameSelected(name);

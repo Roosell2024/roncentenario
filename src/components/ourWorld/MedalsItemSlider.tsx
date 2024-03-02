@@ -33,8 +33,8 @@ export const MedalsItemSlider = ({ rumMedals, lastOne }: Props) => {
 
   return (
     <div className="flex flex-row justify-start w-full min-w-max">
-      <div className="flex ml-20">
-        <img src={rumMedals.img} alt="" className="mt-6 w-[21rem]" />
+      <div className="flex">
+        <img src={rumMedals.img} alt="" className="mt-6 sm:h-md:w-[21rem] sm:w-[18rem] sm:h-fit" />
       </div>
       <div className="flex flex-col">
         {rumMedals.medals.map((med, i) => (
@@ -42,14 +42,14 @@ export const MedalsItemSlider = ({ rumMedals, lastOne }: Props) => {
             src={med.img}
             key={i}
             alt={med.name}
-            className="w-32 h-fit mb-2 coin hover:flipping hover:cursor-pointer"
+            className="sm:h-md:w-32 w-28 h-fit mb-2 coin hover:flipping hover:cursor-pointer"
             onClick={() => changeMedal(i)}
           />
         ))}
       </div>
       <div className="flex flex-col justify-start items-center ml-8">
-        <img src={medalData.img} alt={medalData.name} className="w-60 h-fit" />
-        <p className="w-80 mt-5 text-green-300 text-lg font-normal text-justify h-[340px] overflow-y-auto pr-1">{t(medalData.text)} </p>
+        <img src={medalData.img} alt={medalData.name} className="sm:h-md:w-60 w-44 h-fit" />
+        <p className="w-80 mt-5 text-green-300 text-lg font-normal text-justify sm:h-md:h-[340px] h-[300px] overflow-y-auto pr-1">{t(medalData.text)} </p>
         <a
           href="https://roncentenario.blob.core.windows.net/multimedia/Book of medals 2023 (12 premium).pdf"
           target="_blank"

@@ -10,7 +10,7 @@ export const Sustainability = () => {
       <div className="sm:mt-60 mt-32">
         <h1 className="uppercase font-bold text-6xl text-gold sm:text-left text-center">{t('menu.sustainability')}</h1>
       </div>
-      <img src={orange} alt="Leafs" className="absolute w-72 h-72 rotate-1 sm:top-64 top-128" />
+      <img src={orange} alt="orange" className="absolute w-72 h-72 rotate-1 sm:top-64 top-128 sm:h-md:left-auto left-0" />
       <div className="text-center sm:mt-28">
         <img
           alt="logo_anejado"
@@ -18,7 +18,7 @@ export const Sustainability = () => {
           src={i18n.language === 'sp' ? AgeByNatureGoldES : AgeByNatureGoldEN}
         />
       </div>
-      <img src={hojaLarga} alt="Leafs" className="absolute w-96 h-96 right-20 top-52 sm:block hidden" />
+      <img src={hojaLarga} alt="Leafs" className="absolute w-96 h-96 sm:h-md:right-20 right-0 top-52 sm:block hidden " />
 
       <VideoComp
         autoPlay={false}
