@@ -1,3 +1,3 @@
-import BgHome from './fondo-Homepage.jpg';
+import BgHome from './fondo-Homepage.webp';
 
 export { BgHome };

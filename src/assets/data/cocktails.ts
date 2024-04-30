@@ -14,10 +14,68 @@ import {
   ron_pirina,
   smoked,
   velvety,
+  expresso_centini,
+  mai_tai,
+  old_pura_vida,
 } from '../imgs/cocktails/signatureDrinks';
 import { degrees9Punch, doctorCentenario, planters } from '../imgs/cocktails/tiki';
 
 export const signatureDrinks: CocktailItem[] = [
+  {
+    flavor: 'sweet',
+    img: expresso_centini,
+    name: 'ESPRESSO CENTINI',
+    method: 'shake_strain',
+    glass: 'chill_glass',
+    ice:'none',
+    garnish: '3_coffee_beans',
+    levelDifficulty: 'medium',
+    videoUrl: 'y4LHTByNzVM',
+    ingredients: [
+      {quantity:'30ML', name: 'Ron Centenario 9 Grados'},
+      {quantity:'30ML', name: 'Centenario Café'},
+      { quantity: DropWater, name: 'cocktails.fresh_expresso', hasIcon: true, customClass: 'w-8' },
+      { quantity: '10ML', name: 'cocktails.simple_syrup' },
+      
+    ],
+  },
+  {
+    flavor: 'fruity',
+    img: mai_tai,
+    name: 'Centenario Mai Tai',
+    method: 'shake_strain',
+    glass: 'double_rocks',
+    ice:'crushed',
+    garnish: 'mint_spring',
+    levelDifficulty: 'medium',
+    videoUrl: '1pdcsmxIHdk',
+    ingredients: [
+      {quantity:'45ML', name: 'Ron Centenario 20'},
+      {quantity:'7.5ML', name: 'London Dry Gin'},
+      {quantity:'7.5ML', name: 'cocktails.orange_liquor'},
+      {quantity:'30ML', name: 'cocktails.orgeat_syrup'},
+      {quantity:'22.5ML', name: 'cocktails.lime_juice'},
+      {quantity: '3', name: 'cocktails.dash_cocoa_bitters'},
+    ],
+  },
+  {
+    flavor: 'citrus',
+    img: old_pura_vida,
+    name: 'Old Pura Vida',
+    method: 'shake_strain',
+    glass: 'chill_coupe',
+    ice:'none',
+    garnish: 'mint_leave',
+    levelDifficulty: 'medium',
+    videoUrl: 'RkXDRltyXkQ',
+    ingredients: [
+      {quantity:'60ML', name: 'Ron Centenario 12'},
+      {quantity:'10', name: 'cocktails.mint_leave'},
+      {quantity:'15ML', name: 'cocktails.simple_syrup'},
+      { quantity: '2', name: 'cocktails.dash_of_angostura_bitters' },
+      { quantity: DropWater, customClass: 'w-8', hasIcon: true, name: 'cocktails.top_sparkling_wine' },
+    ],
+  },
   {
     flavor: 'sweet',
     img: el_yodito,
@@ -27,7 +85,7 @@ export const signatureDrinks: CocktailItem[] = [
     ice: 'none',
     garnish: '3_coffee_beans',
     levelDifficulty: 'medium',
-    videoUrl: 'https://www.youtube.com/shorts/Nq2wxFa5Lj4',
+    videoUrl: 'Nq2wxFa5Lj4',
     ingredients: [
       { quantity: '45ML', name: 'Centenario Café' },
       { quantity: '20ML', name: 'cocktails.simple_syrup' },
@@ -43,7 +101,7 @@ export const signatureDrinks: CocktailItem[] = [
     ice: 'cubed',
     garnish: 'orange_peel',
     levelDifficulty: 'low',
-    videoUrl: 'https://www.youtube.com/shorts/hkvbv_FfKcA',
+    videoUrl: 'hkvbv_FfKcA',
     ingredients: [
       { quantity: '45ML', name: 'Centenario Café' },
       { quantity: '2', name: 'cocktails.dashes_orange_bitters' },
@@ -59,7 +117,7 @@ export const signatureDrinks: CocktailItem[] = [
     ice: 'crushed',
     garnish: 'pineapple_slice',
     levelDifficulty: 'medium',
-    videoUrl: 'https://www.youtube.com/shorts/fRVfKrWjMC8',
+    videoUrl: 'fRVfKrWjMC8',
     ingredients: [
       { quantity: '2', name: 'cocktails.slices_of_lime' },
       { quantity: '2', name: 'cocktails.pineapple_chunks' },
@@ -76,7 +134,7 @@ export const signatureDrinks: CocktailItem[] = [
     ice: 'cubed',
     garnish: 'slices_of_lime',
     levelDifficulty: 'low',
-    videoUrl: 'https://www.youtube.com/shorts/v_2wZM8rCQM',
+    videoUrl: 'v_2wZM8rCQM',
     ingredients: [
       { quantity: '45ML', name: 'Ron centenario oro' },
       { quantity: '10ML', name: 'cocktails.lime_juice' },
@@ -92,7 +150,7 @@ export const signatureDrinks: CocktailItem[] = [
     ice: 'cubed',
     garnish: 'none',
     levelDifficulty: 'low',
-    videoUrl: 'https://www.youtube.com/shorts/BQf6d7DTjfk',
+    videoUrl: 'BQf6d7DTjfk',
     ingredients: [
       { quantity: '45ML', name: 'Ron Centenario 5 Volcanes' },
       { quantity: '10ML', name: 'cocktails.agave_syrup' },
@@ -111,7 +169,7 @@ export const signatureDrinks: CocktailItem[] = [
     ice: 'cubed',
     garnish: 'apple_fan',
     levelDifficulty: 'medium',
-    videoUrl: 'https://www.youtube.com/shorts/6VtwgAQFv_o',
+    videoUrl: '6VtwgAQFv_o',
     ingredients: [
       { quantity: '1', name: 'cocktails.cube_demerara_sugar' },
       { quantity: '1', name: 'cocktails.bar_spoon_falernum' },
@@ -128,7 +186,7 @@ export const signatureDrinks: CocktailItem[] = [
     ice: 'none',
     garnish: 'lime_peel',
     levelDifficulty: 'medium',
-    videoUrl: 'https://www.youtube.com/shorts/BKjqR8nRrKY',
+    videoUrl: 'BKjqR8nRrKY',
     ingredients: [
       { quantity: '60ml', name: 'Ron Centenario 9 Grados' },
       { quantity: '30ml', name: 'cocktails.lime_juice' },
@@ -144,7 +202,7 @@ export const signatureDrinks: CocktailItem[] = [
     ice: 'cubed',
     garnish: 'kiwi_slice',
     levelDifficulty: '',
-    videoUrl: 'https://www.youtube.com/shorts/y7Kh0wsHsJ8',
+    videoUrl: 'y7Kh0wsHsJ8',
     ingredients: [
       { quantity: '40ml', name: 'Ron Centenario 9 Grados' },
       { quantity: '3', name: 'cocktails.thin_slices_kiwi' },
@@ -160,7 +218,7 @@ export const signatureDrinks: CocktailItem[] = [
     ice: 'big_rock',
     garnish: '',
     levelDifficulty: 'medium',
-    videoUrl: 'https://www.youtube.com/shorts/RGsF36vk9sg',
+    videoUrl: 'RGsF36vk9sg',
     ingredients: [
       { quantity: '60ml', name: 'Ron Centenario 12 Secretos' },
       { quantity: '15ml', name: 'cocktails.rich_demerara_syrup' },
@@ -177,7 +235,7 @@ export const signatureDrinks: CocktailItem[] = [
     ice: 'none',
     garnish: 'orange_peel',
     levelDifficulty: '',
-    videoUrl: 'https://www.youtube.com/shorts/qlKng9U4s_0',
+    videoUrl: 'qlKng9U4s_0',
     ingredients: [
       { quantity: '60ml', name: 'Ron Centenario 20' },
       { quantity: '15ml', name: 'cocktails.sweet_vermouth' },
@@ -194,7 +252,7 @@ export const signatureDrinks: CocktailItem[] = [
     ice: 'cubed',
     garnish: 'rosemary_spring',
     levelDifficulty: '',
-    videoUrl: 'https://www.youtube.com/shorts/S1jtbGQgk7c',
+    videoUrl: 'S1jtbGQgk7c',
     ingredients: [
       { quantity: '45ml', name: 'Ron Centenario 25' },
       { quantity: '15ml', name: 'cocktails.rosemary_syrup' },
@@ -211,7 +269,7 @@ export const signatureDrinks: CocktailItem[] = [
     ice: 'cubed',
     garnish: 'skewed_red_fruits',
     levelDifficulty: 'low',
-    videoUrl: 'https://www.youtube.com/shorts/znZR8Hy4IsA',
+    videoUrl: 'znZR8Hy4IsA',
     ingredients: [
       { quantity: '60ml', name: 'Ron Centenario 30' },
       { quantity: '1', name: 'cocktails.dash_cocoa_bitters' },
@@ -234,7 +292,7 @@ export const agedByNature: CocktailItem[] = [
     ice: '',
     garnish: 'skewed_blackberries',
     levelDifficulty: 'low',
-    videoUrl: 'https://www.youtube.com/shorts/58l4VZvc5vU',
+    videoUrl: '58l4VZvc5vU',
     ingredients: [
       { quantity: '30ml', name: 'cocktails.blackberries_puree' },
       { quantity: '45ml', name: 'Ron Centenario 12 Secretos' },
@@ -250,7 +308,7 @@ export const agedByNature: CocktailItem[] = [
     ice: '',
     garnish: 'pineapple_chunks',
     levelDifficulty: 'low',
-    videoUrl: 'https://youtube.com/shorts/iAp2Emp3PSA',
+    videoUrl: 'iAp2Emp3PSA',
     ingredients: [
       { quantity: '30ml', name: 'cocktails.passion_fruit_puree' },
       { quantity: '45ml', name: 'Ron Centenario 5 Volcanes' },
@@ -266,7 +324,7 @@ export const agedByNature: CocktailItem[] = [
     ice: '',
     garnish: 'spring_basil',
     levelDifficulty: 'low',
-    videoUrl: 'https://www.youtube.com/shorts/4Y_Ulsf1dlU',
+    videoUrl: '4Y_Ulsf1dlU',
     ingredients: [
       { quantity: '10ml', name: 'cocktails.lime_juice' },
       { quantity: '20ml', name: 'cocktails.orange_juice' },
@@ -283,7 +341,7 @@ export const agedByNature: CocktailItem[] = [
     ice: '',
     garnish: 'skewed_red_fruits',
     levelDifficulty: 'low',
-    videoUrl: 'https://www.youtube.com/shorts/BQf6d7DTjfk',
+    videoUrl: 'BQf6d7DTjfk',
     ingredients: [
       { quantity: '2', name: 'cocktails.raspberries' },
       { quantity: '1', name: 'cocktails.strawberries' },
@@ -303,7 +361,7 @@ export const tikiCocktails: CocktailItem[] = [
     ice: 'crushed',
     garnish: 'mint_spring',
     levelDifficulty: '',
-    videoUrl: 'https://youtu.be/dhhe3aVh6oo',
+    videoUrl: 'dhhe3aVh6oo',
     ingredients: [
       { quantity: '30ml', name: 'Ron Centenario 7 Provincias' },
       { quantity: '30ml', name: 'Ron Centenario 9 Grados' },
@@ -323,7 +381,7 @@ export const tikiCocktails: CocktailItem[] = [
     ice: 'crushed',
     garnish: 'flamed_lime_shell_cinnamon',
     levelDifficulty: '',
-    videoUrl: 'https://youtu.be/RkQAtpQKyy0',
+    videoUrl: 'RkQAtpQKyy0',
     ingredients: [
       { quantity: '60ml', name: 'Ron Centenario 12 Secretos' },
       { quantity: '30ml', name: 'cocktails.lime_juice' },
@@ -342,7 +400,7 @@ export const tikiCocktails: CocktailItem[] = [
     ice: 'crushed',
     garnish: 'mint_spring',
     levelDifficulty: '',
-    videoUrl: 'https://youtu.be/AUqYE3F7dQY',
+    videoUrl: 'AUqYE3F7dQY',
     ingredients: [
       { quantity: '60ml', name: 'Ron Centenario 9 Grados' },
       { quantity: '30ml', name: 'cocktails.lime_juice' },

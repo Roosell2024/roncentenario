@@ -48,30 +48,6 @@ body {
     transform: translate(-50%, -100%);
 }
 
-.coin {
-    background-size: cover;
-    position: relative;
-    perspective: 1000px; // Add perspective to give depth perception
-}
-
-.coin:before,
-.coin:after {
-    content: "";
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden; // Hide the back face during the flip
-}
-
-.coin:before {
-    transform: rotateY(0deg);
-}
-
-.coin:after {
-    transform: rotateY(180deg);
-}
-
 @keyframes flip {
     0% {
         transform: rotateY(0deg);
@@ -86,7 +62,6 @@ body {
     }
 }
 
-
 @layer utilities {
     .coin.flipping {
         animation: flip infinite 800ms ease-in-out;
@@ -97,7 +72,10 @@ body {
     .slick-prev:before,
     .slick-next:before {
         @apply text-green-300;
-        @apply text-3xl
+        @media screen and (min-width: 640px){
+            @apply text-3xl;
+            
+        }
     }
     img {
         display: inline-block !important;
@@ -118,4 +96,10 @@ body {
     stroke: #84a39c;
     stroke-linejoin: round;
     stroke-width: 4px;
+}
+
+.yt-lite > .lty-playbtn{
+    width: 68px;
+    height: 48px;
+    border-radius: 20%;
 }

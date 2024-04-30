@@ -24,6 +24,7 @@ module.exports = {
     'react-refresh/only-export-components': 'off',
     'jsx-a11y/no-noninteractive-element-interactions': 'off',
     'react/no-unescaped-entities': 'off',
+    '@typescript-eslint/no-explicit-any': 'warn',
   },
   settings: {
     'import/resolver': {

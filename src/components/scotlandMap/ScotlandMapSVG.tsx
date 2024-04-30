@@ -5,31 +5,31 @@ import { useTransition } from 'transition-hook';
 const standardClasses =
   'before:border-t-2 before:border-dashed before:border-t-green-100 sm:after:absolute after:w-4 after:h-4 after:bg-green-100 after:rounded-full before:top-[0.9rem] after:top-[0.45rem]';
 
-  const leftLine = `${standardClasses} before:left-[14rem] after:left-[13rem]`;
-  const rightLine = `${standardClasses} after:-left-5`;
+const leftLine = `${standardClasses} before:left-[14rem] after:left-[13rem]`;
+const rightLine = `${standardClasses} after:-left-5`;
 
-const textHoverStandardClasses = 'cursor-default fill-[#403D3D] ';
+const textHoverStandardClasses = 'cursor-default fill-[#403D3D]';
 const pathHoverStandardClasses = 'cursor-default stroke-[#403D3D] stroke-1';
 
 const data = {
   highlands: {
     text: 'our_history.highlands',
-    lineClasses: `before:w-[2.1rem] before:right-[14.5rem] ${rightLine}`,
-    positionTooltip: { left: 'auto', top: '18rem', right: '-14rem' },
+    lineClasses: `before:w-[6.5rem] before:right-[16rem] ${rightLine}`,
+    positionTooltip: { left: 'auto', top: '18rem', right: '-20rem' },
     pathHoverClasses: `fill-[#DCBF6F] ${pathHoverStandardClasses}`,
     textHoverClasses: `${textHoverStandardClasses}`,
   },
   lowlands: {
     text: 'our_history.lowlands',
-    lineClasses: `before:w-[7rem] before:right-[12rem] ${rightLine}`,
-    positionTooltip: { left: 'auto', top: '32rem', right: '-16rem' },
+    lineClasses: `before:w-[5rem] before:right-[16rem] ${rightLine}`,
+    positionTooltip: { left: 'auto', top: '32rem', right: '-18rem' },
     pathHoverClasses: `fill-[#F2DEA9] ${pathHoverStandardClasses}`,
     textHoverClasses: `${textHoverStandardClasses}`,
   },
   speyside: {
     text: 'our_history.speyside',
-    lineClasses: `before:w-[5.5rem] before:right-[14rem] ${rightLine}`,
-    positionTooltip: { left: 'auto', top: '12rem', right: '-14rem' },
+    lineClasses: `before:w-[5.5rem] before:right-[16rem] ${rightLine}`,
+    positionTooltip: { left: 'auto', top: '12rem', right: '-16rem' },
     pathHoverClasses: `fill-[#FFF1CA] ${pathHoverStandardClasses}`,
     textHoverClasses: `${textHoverStandardClasses}`,
   },
@@ -44,9 +44,9 @@ const data = {
 
 export const ScotlandMapSVG = () => {
   const { t } = useTranslation();
-  const [onOff, setOnOff] = useState(false);
+  const [onOff, setOnOff] = useState(true);
   const { stage, shouldMount } = useTransition(onOff, 300);
-  const [nameSelected, setNameSelected] = useState('');
+  const [nameSelected, setNameSelected] = useState('highlands');
 
   const handleMouseEnter = (name: string) => () => {
     setNameSelected(name);
@@ -61,19 +61,7 @@ export const ScotlandMapSVG = () => {
   const elementSelected = data[nameSelected as keyof typeof data];
 
   return (
-    <div className="w-[500px] h-[700px] relative sm:mt-0 mt-40">
-      {shouldMount && (
-        <div
-          className={`sm:absolute w-fit text-green-100 sm:before:absolute ${elementSelected?.lineClasses}`}
-          style={{
-            ...elementSelected?.positionTooltip,
-            transition: '.3s',
-            opacity: stage === 'enter' ? 1 : 0,
-          }}
-        >
-          <p className="text-xl">{t(elementSelected?.text)}</p>
-        </div>
-      )}
+    <div className="w-[500px] h-[700px] relative sm:mt-0 mt-32">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 402.69 557.64">
         <path
           onMouseEnter={handleMouseEnter('islay')}
@@ -320,7 +308,7 @@ export const ScotlandMapSVG = () => {
           SPEYSIDE
         </text>
         <text
-          transform="matrix(1 0 0 1 0 375)"
+          transform="matrix(1 0 0 1 5 375)"
           fontSize="16"
           fill="black"
           fontWeight="bold"
@@ -330,6 +318,19 @@ export const ScotlandMapSVG = () => {
           ISLAY
         </text>
       </svg>
+      {shouldMount && (
+        <div
+          className={`sm:absolute sm:w-fit text-green-100 sm:before:absolute sm:text-left text-center sm:p-0 p-4 sm:m-0 m-2 sm:border-none border-dashed border-2 border-green-300 ${elementSelected?.lineClasses}`}
+          style={{
+            ...elementSelected?.positionTooltip,
+            transition: '.3s',
+            opacity: stage === 'enter' ? 1 : 0,
+          }}
+        >
+          <h6 className='sm:hidden block text-2xl uppercase '>{nameSelected}</h6>
+          <p className="text-xl sm:w-60">{t(elementSelected?.text)}</p>
+        </div>
+      )}
     </div>
   );
 };

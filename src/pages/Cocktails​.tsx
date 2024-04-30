@@ -48,32 +48,32 @@ export const Cocktails = () => {
 
   return (
     <section className="xl:px-44 sm:px-10 relative">
-      <div className="absolute sm:left-1/3 left-1/2 top-72 transform-50">
-        <AgedByNatureLogo className="w-80" />
+      <div className="absolute sm:left-114 left-10 sm:top-10">
+        <AgedByNatureLogo className="sm:w-80 w-44" />
       </div>
 
       <img
         src={OrangeIcon}
         alt="orange icon"
-        className="absolute top-80 right-0 left-36 mx-auto w-32 mix-blend-darken -rotate-12"
+        className="absolute top-80 right-0 left-36 mx-auto w-32 mix-blend-darken -rotate-12 sm:block hidden"
       />
 
-      <div className="pt-80 mb-28">
-        <h1 className="uppercase font-extrabold text-6xl text-gold sm:text-left text-center">{t('menu.cocktails')}</h1>
+      <div className="sm:pt-80 pt-40 sm:mb-28">
+        <h1 className="uppercase font-extrabold h-lg:xs:text-6xl text-5xl text-gold text-left sm:px-0 px-10">{t('menu.cocktails')}</h1>
       </div>
 
-      <div className="relative sm:my-56 mt-96 text-center">
+      <div className="relative sm:my-56 -mt-44 sm:text-center text-right">
         <img src={leafMultiColor} alt="Leaf" className="top-0 left-0 absolute sm:block hidden" />
+        <img src={orangeComplete} alt="orange" className="-top-44 right-32 absolute rotate-90 w-52 opacity-60 sm:block hidden" />
+        <img src={botellaCoctel} alt="Vaso de coctel con botella" className="sm:absolute sm:-top-56 sm:-right-20 sm:w-[400px] w-48 inline-block" />
 
         <div className="inline-block 2xl:w-[650px] sm:w-[450px] text-justify text-green-300 sm:px-0 px-10">
           <p className="text-2xl">{t('cocktails.introduction')}</p>
         </div>
-        <img src={orangeComplete} alt="orange" className="-top-44 right-32 absolute rotate-90 w-52 opacity-60" />
 
-        <img src={botellaCoctel} alt="vaso botella" className="sm:absolute -top-56 -right-20" width={400} />
       </div>
 
-      <div className="sm:flex items-center mt-52 gap-4 sm:px-0 px-10">
+      <div className="sm:flex items-center sm:mt-52 mt-10 gap-4 sm:px-0 px-10">
         <p className="font-bold text-4xl sm:border-r-2 border-dashed border-green-300 text-gold sm:pr-5 sm:mb-0 mb-4 uppercase">
           {t('cocktails.find_cocktail_style')}
         </p>
@@ -117,7 +117,7 @@ export const Cocktails = () => {
           <img src={broomIcon} alt="clear icon" className="w-7" />
         </button>
       </div>
-      <div className="my-52">
+      <div className="sm:my-52 my-20 ">
         {signatureDrinks.length > 0 && (
           <CocktailsSlider title={t('cocktails.signature_cocktails')} options={filterOptions(signatureDrinks)} />
         )}

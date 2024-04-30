@@ -1,6 +1,6 @@
-import degrees9Punch from './9_degrees_punch.png';
-import doctorCentenario from './doctor_centenario.png';
-import planters from './planters.png';
+import degrees9Punch from './9_degrees_punch.webp';
+import doctorCentenario from './doctor_centenario.webp';
+import planters from './planters.webp';
 
 export {
     degrees9Punch,

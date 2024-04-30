@@ -1,11 +1,13 @@
-import scotlandMap from '../../assets/imgs/ourHistory/scotland_map.svg';
-import barricas from '../../assets/imgs/ourHistory/BARRIL_timeline.svg';
-import centenarioEspecial from '../../assets/imgs/ourHistory/anejado_especial.png';
-import centenarioConmemorativo from '../../assets/imgs/ourHistory/conmemorativo.png';
-import usaGermany from '../../assets/imgs/ourHistory/flag.png';
-import botellas from '../../assets/imgs/ourHistory/BOTTLES.png';
-import edicionLimitada30 from '../../assets/imgs/ourHistory/edicion_limitada_30.png';
-import agedByNature from '../../assets/imgs/ourHistory/aged-by-nature.png';
+import {
+  agedByNature,
+  barricas,
+  botellas,
+  centenarioConmemorativo,
+  centenarioEspecial,
+  edicionLimitada30,
+  scotlandMap,
+  usaGermany,
+} from '../../assets/imgs/ourHistory';
 
 export const timeLineListData = [
   {

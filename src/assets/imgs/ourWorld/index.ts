@@ -1,32 +1,38 @@
-import BGOWorld from './fondo_ourWorld.jpeg';
-import AlemaniSilver2007 from './ALEMANIA_SILVER_MEDAL_2007.png';
-import AlemaniSilver2012 from './ALEMANIA_SILVER_MEDAL_2012.png';
-import AlemaniaSpirit2011 from './ALEMANIA_SPIRIT_OF_THE_YEAR_2011.png';
-import AwardISWGermany2024 from './AWARD_ISW_GERMANY_2024.png';
-import DoubleGoldFlorida2018 from './DOUBLE GOLD MEDAL FLORIDA 2018.png';
-import EspanaDobleGold2014 from './Spain DOBLE GOLD MEDAL 2014.png';
-import EspanaDobleGold2015 from './Spain DOBLE GOLD MEDAL 2015.png';
-import EspanaDobleGold2016 from './Spain DOBLE GOLD MEDAL 2016.png';
-import EspanaSilver2012 from './Spain SILVER MEDAL 2012.png';
-import EspanaSilver2014 from './Spain SILVER MEDAL 2014.png';
-import FiftyBestNewYork2018 from './FIFTY BEST NEW YORK 2018.png';
-import MadridRumSilver2018Big from './MADRID RUM CONFERENCE SILVER 2018 BIG.png';
-import MadridRumSilver2018 from './MADRID RUM CONFERENCE SILVER 2018.png';
-import MiniMedalla from './minimedalla.png';
-import RenaissanceMiami2018 from './RUM RENAISSANCE MIAMI 2018.png';
-import SilverSpirits2017 from './SILVER SPIRITS 2017.png';
-import TokyoGold2022 from './TOKIO GOLD WINNER 2022.png';
-import TokyoSilver2023 from './TOKYO SILVER WINNER 2023.png';
-import TokyoSuperior2023 from './TOKYO SUPERIOR GOLD WINNER 2023.png';
-import WorldSpiritsSilver2019 from './WORLD SPIRITS SILVER 2019.png';
-import SpainGoldMedal2016 from './SPAIN GOLD MEDAL 2016.png';
-import EventJapon from './event_japon.png';
-import EventMak from './event_mark.png';
-import EventParis from './event_paris.png';
-import NewsMercadoAlemania from './news_mercadoAlemania.png';
-import NewsMarcadoItaliano from './news_mercadoItaliano.png';
-import NewsMercadoJapones from './news_mercadoJapones.png';
+import BGOWorld from './fondo_ourWorld.webp';
+import MiniMedalla from './minimedalla.webp';
+import MapaMundiSvg from './MAPAMUNDI.svg';
 
+// Medal images
+import AlemaniSilver2007 from './medals/ALEMANIA_SILVER_MEDAL_2007.webp';
+import AlemaniSilver2012 from './medals/ALEMANIA_SILVER_MEDAL_2012.webp';
+import AlemaniaSpirit2011 from './medals/ALEMANIA_SPIRIT_OF_THE_YEAR_2011.webp';
+import AwardISWGermany2024 from './medals/AWARD_ISW_GERMANY_2024.webp';
+import DoubleGoldFlorida2018 from './medals/DOUBLE GOLD MEDAL FLORIDA 2018.webp';
+import EspanaDobleGold2014 from './medals/Spain DOBLE GOLD MEDAL 2014.webp';
+import EspanaDobleGold2015 from './medals/Spain DOBLE GOLD MEDAL 2015.webp';
+import EspanaDobleGold2016 from './medals/Spain DOBLE GOLD MEDAL 2016.webp';
+import EspanaSilver2012 from './medals/Spain SILVER MEDAL 2012.webp';
+import EspanaSilver2014 from './medals/Spain SILVER MEDAL 2014.webp';
+import FiftyBestNewYork2018 from './medals/FIFTY BEST NEW YORK 2018.webp';
+import MadridRumSilver2018Big from './medals/MADRID RUM CONFERENCE SILVER 2018 BIG.webp';
+import MadridRumSilver2018 from './medals/MADRID RUM CONFERENCE SILVER 2018.webp';
+import RenaissanceMiami2018 from './medals/RUM RENAISSANCE MIAMI 2018.webp';
+import SilverSpirits2017 from './medals/SILVER SPIRITS 2017.webp';
+import TokyoGold2022 from './medals/TOKIO GOLD WINNER 2022.webp';
+import TokyoSilver2023 from './medals/TOKYO SILVER WINNER 2023.webp';
+import TokyoSuperior2023 from './medals/TOKYO SUPERIOR GOLD WINNER 2023.webp';
+import WorldSpiritsSilver2019 from './medals/WORLD SPIRITS SILVER 2019.webp';
+import SpainGoldMedal2016 from './medals/SPAIN GOLD MEDAL 2016.webp';
+
+// Event images
+import EventJapon from './events/event_japon.webp';
+import EventMak from './events/event_mark.webp';
+import EventParis from './events/event_paris.webp';
+
+// News images
+import NewsMercadoAlemania from './news/news_mercadoAlemania.webp';
+import NewsMarcadoItaliano from './news/news_mercadoItaliano.webp';
+import NewsMercadoJapones from './news/news_mercadoJapones.webp';
 
 export {
   BGOWorld,
@@ -57,4 +63,5 @@ export {
   NewsMercadoAlemania,
   NewsMarcadoItaliano,
   NewsMercadoJapones,
+  MapaMundiSvg,
 };

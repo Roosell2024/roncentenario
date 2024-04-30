@@ -4,6 +4,7 @@ import { useTransition } from 'transition-hook';
 import { RumItem } from '../../interfaces';
 import { useTranslation } from 'react-i18next';
 import { useMediaQuery } from '@uidotdev/usehooks';
+import { mobileBreakpoint } from '../../config/constants';
 
 interface Props {
   rum: RumItem;
@@ -11,7 +12,7 @@ interface Props {
 
 export const RumItemSlider = ({ rum }: Props) => {
   const { t } = useTranslation();
-  const isSmallDevice = useMediaQuery('only screen and (max-width : 640px)');
+  const isSmallDevice = useMediaQuery(mobileBreakpoint);
   const container = useRef<HTMLDivElement | null>(null);
 
   const [itemSelected, setItemSelected] = useState({
@@ -71,7 +72,7 @@ export const RumItemSlider = ({ rum }: Props) => {
   };
 
   return (
-    <div className="h-[850px] relative mx-10" ref={container}>
+    <div className="h-[850px] relative xs:mx-10 mx-5" ref={container}>
       <img
         src={rum.bottle}
         alt="bottle"
@@ -94,7 +95,7 @@ export const RumItemSlider = ({ rum }: Props) => {
         </div>
       )}
 
-      <div className="sm:w-40 w-20 absolute sm:left-0 -left-8 sm:top-40 top-0 text-center">
+      <div className="sm:w-40 w-[6.3rem] absolute sm:left-0 -left-8 sm:top-40 top-0 text-center">
         <h6 className="font-bold text-center text-green-300 text-xl uppercase mb-3">abv%</h6>
         <img
           src={ABVIcon}
@@ -105,18 +106,18 @@ export const RumItemSlider = ({ rum }: Props) => {
         />
       </div>
 
-      <div className="sm:w-40 w-20 absolute sm:left-0 left-15 sm:top-[33rem] top-0 text-center">
+      <div className="sm:w-40 w-[6.3rem] absolute sm:left-0 left-12 sm:top-[33rem] top-0 text-center">
         <h6 className="font-bold text-center text-green-300 text-xl uppercase mb-3">{t('our_rums.aging')}</h6>
         <img
           src={AgingIcon}
           alt="Aging"
-          className="inline-block"
+          className="inline-block sm:w-auto w-20"
           onMouseEnter={handleHoverIcon('aging')}
           onMouseLeave={handleMouseLeave}
         />
       </div>
 
-      <div className="sm:w-40 w-20 absolute sm:right-0 right-15 sm:top-40 top-0 text-center">
+      <div className="sm:w-40 w-[6.3rem] absolute sm:right-0 right-12 sm:top-40 top-0 text-center">
         <h6 className="font-bold text-center text-green-300 text-xl uppercase mb-3">{t('our_rums.aroma')}</h6>
         <img
           src={NosingIcon}
@@ -126,7 +127,7 @@ export const RumItemSlider = ({ rum }: Props) => {
           onMouseLeave={handleMouseLeave}
         />
       </div>
-      <div className="sm:w-40 w-20 absolute sm:right-0 -right-8 sm:top-[33rem] top-0 text-center">
+      <div className="sm:w-40 w-[6.3rem] absolute sm:right-0 -right-8 sm:top-[33rem] top-0 text-center">
         <h6 className="font-bold text-center text-green-300 text-xl uppercase mb-3">{t('our_rums.flavor')}</h6>
         <img
           src={TasteIcon}

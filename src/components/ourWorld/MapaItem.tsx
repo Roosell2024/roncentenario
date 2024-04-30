@@ -1,4 +1,3 @@
-import { MapaMundiSVG } from './MapaMundiSVG';
 import {
   CroatiaFlag,
   CzechRepublicFlag,
@@ -14,12 +13,13 @@ import {
   SwitzerlandFlag,
   UsaFlag,
 } from '../../assets/imgs/ourWorld/flags';
+import { MapaMundiSvg } from '../../assets/imgs/ourWorld';
 
 export const MapaItem = () => {
   return (
-    <div className="flex flex-row justify-start w-full">
-      <div className="flex flex-col absolute top-64">
-        <ul className="list-disc text-green-300 text-lg">
+    <div className="flex md:flex-row justify-start w-full flex-col-reverse">
+      <div className="flex flex-col w-full absolute  md:top-64 top-28 md:left-0 justify-center md:items-start items-center">
+        <ul className="list-disc text-green-300 text-lg z-10">
           <li>
             <a
               href="https://www.totalbeveragesolution.com/product-finder/"
@@ -28,7 +28,7 @@ export const MapaItem = () => {
               className="w-fit flex flex-row items-center text-green-300 hover:text-green-100"
             >
               United States/All states except Florida
-              <img src={UsaFlag} alt="usa flag" className="w-4 h-fit ml-1 shadow" />
+              <img src={UsaFlag} alt="usa flag" className="w-4 md:h-fit ml-1 shadow" />
             </a>
           </li>
           <li>
@@ -38,7 +38,7 @@ export const MapaItem = () => {
               rel="noreferrer"
               className="w-fit flex flex-row items-center text-green-300 hover:text-green-100"
             >
-              United States/Florida <img src={UsaFlag} alt="usa flag" className="w-4 h-fit ml-1 shadow" />
+              United States/Florida <img src={UsaFlag} alt="usa flag" className="w-4 md:h-fit ml-1 shadow" />
             </a>
           </li>
           <li>
@@ -48,7 +48,7 @@ export const MapaItem = () => {
               rel="noreferrer"
               className="w-fit flex flex-row items-center text-green-300 hover:text-green-100"
             >
-              Germany <img src={GermanyFlag} alt="GermanyFlag" className="w-4 h-fit ml-1 shadow" />
+              Germany <img src={GermanyFlag} alt="GermanyFlag" className="w-4 md:h-fit ml-1 shadow" />
             </a>
           </li>
           <li>
@@ -58,7 +58,7 @@ export const MapaItem = () => {
               rel="noreferrer"
               className="w-fit flex flex-row items-center text-green-300 hover:text-green-100"
             >
-              Czech Republic <img src={CzechRepublicFlag} alt="CzechRepublicFlag" className="w-4 h-fit ml-1 shadow" />
+              Czech Republic <img src={CzechRepublicFlag} alt="CzechRepublicFlag" className="w-4 md:h-fit ml-1 shadow" />
             </a>
           </li>
           <li>
@@ -68,7 +68,7 @@ export const MapaItem = () => {
               rel="noreferrer"
               className="w-fit flex flex-row items-center text-green-300 hover:text-green-100"
             >
-              Latvia <img src={LatviaFlag} alt="LatviaFlag" className="w-4 h-fit ml-1 shadow" />
+              Latvia <img src={LatviaFlag} alt="LatviaFlag" className="w-4 md:h-fit ml-1 shadow" />
             </a>
           </li>
           <li>
@@ -78,7 +78,7 @@ export const MapaItem = () => {
               rel="noreferrer"
               className="w-fit flex flex-row items-center text-green-300 hover:text-green-100"
             >
-              Romania <img src={RomaniaFlag} alt="RomaniaFlag" className="w-4 h-fit ml-1 shadow" />
+              Romania <img src={RomaniaFlag} alt="RomaniaFlag" className="w-4 md:h-fit ml-1 shadow" />
             </a>
           </li>
           <li>
@@ -88,7 +88,7 @@ export const MapaItem = () => {
               rel="noreferrer"
               className="w-fit flex flex-row items-center text-green-300 hover:text-green-100"
             >
-              Croatia <img src={CroatiaFlag} alt="CroatiaFlag" className="w-4 h-fit ml-1 shadow" />
+              Croatia <img src={CroatiaFlag} alt="CroatiaFlag" className="w-4 md:h-fit ml-1 shadow" />
             </a>
           </li>
           <li>
@@ -98,7 +98,7 @@ export const MapaItem = () => {
               rel="noreferrer"
               className="w-fit flex flex-row items-center text-green-300 hover:text-green-100"
             >
-              Slovenia <img src={SloveniaFlag} alt="SloveniaFlag" className="w-4 h-fit ml-1 shadow" />
+              Slovenia <img src={SloveniaFlag} alt="SloveniaFlag" className="w-4 md:h-fit ml-1 shadow" />
             </a>
           </li>
           <li>
@@ -108,7 +108,7 @@ export const MapaItem = () => {
               rel="noreferrer"
               className="w-fit flex flex-row items-center text-green-300 hover:text-green-100"
             >
-              Poland <img src={PolandFlag} alt="PolandFlag" className="w-4 h-fit ml-1 shadow" />
+              Poland <img src={PolandFlag} alt="PolandFlag" className="w-4 md:h-fit ml-1 shadow" />
             </a>
           </li>
           <li>
@@ -118,7 +118,7 @@ export const MapaItem = () => {
               rel="noreferrer"
               className="w-fit flex flex-row items-center text-green-300 hover:text-green-100"
             >
-              Switzerland <img src={SwitzerlandFlag} alt="Switzerland" className="w-4 h-fit ml-1 shadow" />
+              Switzerland <img src={SwitzerlandFlag} alt="Switzerland" className="w-4 md:h-fit ml-1 shadow" />
             </a>
           </li>
           <li>
@@ -128,7 +128,7 @@ export const MapaItem = () => {
               rel="noreferrer"
               className="w-fit flex flex-row items-center text-green-300 hover:text-green-100"
             >
-              Perú <img src={PeruFlag} alt="PeruFlag" className="w-4 h-fit ml-1 shadow" />
+              Perú <img src={PeruFlag} alt="PeruFlag" className="w-4 md:h-fit ml-1 shadow" />
             </a>
           </li>
           <li>
@@ -138,7 +138,7 @@ export const MapaItem = () => {
               rel="noreferrer"
               className="w-fit flex flex-row items-center text-green-300 hover:text-green-100"
             >
-              El Salvador <img src={ElSalvadorFlag} alt="ElSalvadorFlag" className="w-4 h-fit ml-1 shadow" />
+              El Salvador <img src={ElSalvadorFlag} alt="ElSalvadorFlag" className="w-4 md:h-fit ml-1 shadow" />
             </a>
           </li>
           <li>
@@ -148,7 +148,7 @@ export const MapaItem = () => {
               rel="noreferrer"
               className="w-fit flex flex-row items-center text-green-300 hover:text-green-100"
             >
-              Panamá <img src={PanamaFlag} alt="PanamaFlag" className="w-4 h-fit ml-1 shadow" />
+              Panamá <img src={PanamaFlag} alt="PanamaFlag" className="w-4 md:h-fit ml-1 shadow" />
             </a>
           </li>
           <li>
@@ -158,13 +158,13 @@ export const MapaItem = () => {
               rel="noreferrer"
               className="w-fit flex flex-row items-center text-green-300 hover:text-green-100"
             >
-              Japan <img src={JapanFlag} alt="JapanFlag" className="w-4 h-fit ml-1 shadow" />
+              Japan <img src={JapanFlag} alt="JapanFlag" className="w-4 md:h-fit ml-1 shadow" />
             </a>
           </li>
         </ul>
       </div>
-      <div className="mt-10 ml-56 w-[90%]">
-        <MapaMundiSVG />
+      <div className="md:mt-10 md:ml-56 md:w-[90%] mt-52 ml-12 w-full">
+        <img src={MapaMundiSvg} alt="mapa mundi" className='md:w-max md:h-auto md:scale-100 scale-150 md:opacity-100 opacity-70 ' />
       </div>
     </div>
   );

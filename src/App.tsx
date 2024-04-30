@@ -1,10 +1,10 @@
-import { Route } from 'wouter';
+import { Route, Redirect, Switch } from 'wouter';
 import { routes } from './config/routes';
 import { Container } from './components';
 
 const App = () => {
   return (
-    <>
+    <Switch>
       {routes.map(({ Component, ...rest }) => (
         <Route
           path={rest.path}
@@ -12,7 +12,8 @@ const App = () => {
           key={rest.name}
         />
       ))}
-    </>
+      <Route component={() => <Redirect href="/" />} />
+    </Switch>
   );
 };
 

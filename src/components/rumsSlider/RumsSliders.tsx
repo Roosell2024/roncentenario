@@ -43,7 +43,7 @@ export const RumsSliders = ({ name, rums, background }: Props) => {
       }}
     >
       {name && (
-        <div className="flex justify-center">
+        <div className="flex justify-center sm:mb-0 mb-10">
           <h2 className="text-center text-gold font-bold uppercase sm:text-7xl text-5xl sm:w-96 z-10">{name}</h2>
         </div>
       )}

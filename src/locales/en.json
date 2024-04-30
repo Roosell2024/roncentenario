@@ -1,4 +1,5 @@
 {
+    "close": "Close",
     "medals_awards": "Medals and awards",
     "loading":"Loading",
     "email_sent": "Email sent",
@@ -19,7 +20,7 @@
             "aging": "N/A"
         },
         "anejo_claro": {
-            "description": "The only rum from the Centenario family that has triple filtration, with a carefully selected activated carbon treatment so that it only removes color and leaves its color and mild flavor intact. It is a product specially designed for use in cocktails.",
+            "description": "The only rum from the Centenario family that has triple filtration, with a carefully selected activated carbon treatment so that it only removes color and leaves its aromas and mild flavor intact. It is a product specially designed for use in cocktails.",
             "nosing": "Highlights wood and vanilla",
             "flavor": "Soft on the palate, with notes of vanilla, light sweetness and a characteristic oak flavor.",
             "aging": "Traditional System"
@@ -149,6 +150,9 @@
         "orange_peel": "Orange Peel",
         "dashes_orange_bitters": "Dashes of Orange Bitters",
         "fill_tonic_water": "Fill with Tonic Water",
+        "fresh_expresso": "Fresh Expresso",
+        "orange_liquor": "Orange Liquor",
+        "orgeat_syrup": "Orgeat Syrup",
         "muddle_shake_strain": "Muddle, Shake and Strain",
         "double_rocks": "Double Rocks",
         "crushed": "Crushed",
@@ -178,6 +182,7 @@
         "kiwi_slice": "Kiwi Slice",
         "thin_slices_kiwi": "Thin slices of Kiwi",
         "fill_sparkling_water": "Fill with Sparkling Water",
+        "top_sparkling_wine": "Top of Sparkling Wine (after shake)",
         "build_smoked": "Build and Smoked (top smoker)",
         "big_rock": "Big Rock",
         "rich_demerara_syrup": "Rich Demerara Syrup (2:1)",
@@ -202,6 +207,7 @@
         "swizzle_stick": "Swizzle Stick",
         "tiki_glass_highball_glass": "Tiki Glass or Highball Glass",
         "mint_spring": "Mint Spring",
+        "mint_leave": "Pepermint Leave",
         "centenario_homemade_allspice_dram": "Centenario Homemade Allspice Dram",
         "passion_fruit_syrup": "Passion Fruit Syrup",
         "demerara_syrup": "Demerara Syrup",
@@ -309,5 +315,10 @@
         "bottling": "Bottling",
         "age_white_oak": "Aged in American White Oak barrels previously burned internally",
         "first_use": "Previous use of barrels: Scotch Whisky"
+    },
+    "home": {
+        "paragraph1": "Ron Centenario was born in 1981. With the innovative idea of using Scotch Whisky barrels for the Aging process. Four years later in 1985 we showed Costa Rica the first bottle of Ron Centenario.",
+        "paragraph2": "Since its birth, Ron Centenario became the Spirit of Costa Rica. Always present in celebrations and special moments, The Rum of Costa Rica carries its notes of aroma and flavor to all of Costa Rica and to more than 33 destinations around the world, where it delights the most demanding palates, thanks to the exquisite flavor it provided by the natural riches of our beautiful country.",
+        "paragraph3": "Surrounded by rivers, volcanoes, and forests, at 1208 meters high, with optimal humidity levels and immersed in the habitat of more than 40 different species of birds and under the care of our Master Blender, the Centenario barrels turn our Rum into the only one Aged by Nature."
     }
 }

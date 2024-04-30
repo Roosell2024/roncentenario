@@ -34,7 +34,7 @@ export const LanguageFab = () => {
   }
 
   return (
-    <div className="fixed h-sm:right-7 right-5 h-sm:bottom-7 bottom-5 z-50 flex flex-col items-center gap-3">
+    <div className="fixed h-sm:sm:right-7 right-3 h-sm:sm:bottom-7 bottom-3 z-[52] flex flex-col items-center gap-3">
       {shouldMount && (
         <div
           style={{
@@ -51,7 +51,7 @@ export const LanguageFab = () => {
                 onClick={handleChangeLanguage(lang)}
                 className="w-20 h-20 rounded-full hover:cursor-pointer relative shadow-lg"
                 style={{
-                  backgroundImage: `url(${resources[lang].flag})`,
+                  backgroundImage: `url('${resources[lang].flag}')`,
                   backgroundPosition: 'center',
                 }}
               />
@@ -63,7 +63,7 @@ export const LanguageFab = () => {
         className="w-20 h-20 rounded-full hover:cursor-pointer shadow-lg"
         onClick={handleOpenOptions}
         style={{
-          backgroundImage: `url(${resources[languageSelected].flag})`,
+          backgroundImage: `url('${resources[languageSelected].flag}')`,
           backgroundPosition: 'center',
         }}
       />

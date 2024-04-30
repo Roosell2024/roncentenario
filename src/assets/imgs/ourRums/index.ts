@@ -1,4 +1,4 @@
-import Bottles from './bottles.png';
+import Bottles from './bottles.webp';
 import Barril from './barril.svg';
 import Bottling from './BOTTLING_MACHINE.svg';
 import Blending from './MAQUINARIA_DESMINERALIZER.svg';
@@ -12,7 +12,7 @@ import NosingIcon from './nosing_icon.svg';
 import OrangeIcon from './ORANGE.svg';
 import HojaIcon from './HOJA.svg';
 
-import BGOurRums from './fondo_ourRums.jpeg';
+import BGOurRums from './fondo_ourRums.webp';
 
 import bgStarLeaf from './hoja_estrella_fondo.svg';
 import bgUmbrellaLEaf from './hoja_sombrilla_fondo.svg';

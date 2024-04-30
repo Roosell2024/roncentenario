@@ -7,8 +7,8 @@ export const NewSlider = () => {
   const timelineRef = useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
   const { events } = useDraggable(timelineRef);
   return (
-    <div className="flex w-full overflow-x-scroll scrollbar-hide my-15" {...events} ref={timelineRef}>
-      <div className="flex gap-16 p-12">
+    <div className="flex w-full overflow-x-scroll scrollbar-hide md:my-15" {...events} ref={timelineRef}>
+      <div className="flex gap-16 md:p-12 p-5">
         {newsData.map((newItem, i) => (
           <NewItemSlider key={i} newItem={newItem} lastOne={i === newsData.length - 1} />
         ))}

@@ -1,99 +1,81 @@
-import { useState } from 'react';
-import { RightArrow } from '../assets/imgs/icons';
-import { useSwitchTransition } from 'transition-hook';
-import { slidersHome } from '../assets/data/slidersHome';
+import { animated, useSpring } from '@react-spring/web';
 import { LeafsIcon } from '../assets/imgs/shared';
 import { useTranslation } from 'react-i18next';
+import { Bottle20Anniversary, Bottle25Anniversary, Bottle30Anniversary } from '../assets/imgs/ourRums/bottleRums';
 
 export const HomePage = () => {
-  const [current, setCurrent] = useState(0);
   const { t } = useTranslation();
-  const transition = useSwitchTransition(current, 300, 'out-in');
+  const bottle20Animation = useSpring({
+    from: { opacity: 0, transform: 'translate(200%, -35%)' },
+    to: { opacity: 1, transform: 'translate(0, 0)' },
+    delay: 1750,
+    config: { duration: 500 },
+  });
 
-  const handleNext = () => {
-    if (current === slidersHome.length - 1) setCurrent(0);
-    else setCurrent(current + 1);
-  };
+  const bottle30Animation = useSpring({
+    from: { opacity: 0, transform: 'translate(200%, -50%)' },
+    to: { opacity: 1, transform: 'translate(0, 0)' },
+    delay: 100,
+    config: { duration: 1500 },
+  });
 
-  const slider = slidersHome[current];
-  const nextSlider = slidersHome[current === slidersHome.length - 1 ? 0 : current + 1];
+  const bottle25Animation = useSpring({
+    from: { opacity: 0, transform: 'translate(200%, -35%)' },
+    to: { opacity: 1, transform: 'translate(0, 0)' },
+    delay: 2100,
+    config: { duration: 500 },
+  });
+
+  const textAnimation = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    config: { duration: 1000 },
+  });
 
   return (
-    <div className="relative text-right">
+    <div className="relative">
       <img
         src={LeafsIcon}
         alt="leafs"
-        className="absolute w-96 opacity-20 2xl:right-64 right-52 h-sm:top-[21rem] top-48"
+        className="absolute top-52 w-96 opacity-20 sm:right-1/2 2xl:right-[40%] h-xs:sm:top-80 h-lg:sm:top-114"
       />
-      <div
-        className="w-screen grid place-items-center"
-        style={{
-          perspective: '100vw',
-        }}
-      >
-        {transition((_, stage) => (
-          <div
-            className="absolute left-0 right-0 top-0 text-center duration-300"
-            style={{
-              opacity: stage === 'enter' ? 1 : 0,
-              transform: {
-                from: 'translateX(100%) ',
-                enter: 'translateX(0%)',
-                leave: 'translateX(-100%) rotateX(-60deg)',
-              }[stage],
-            }}
-          >
-            {slider && (
-              <div className="sm:inline-flex sm:text-left text-white-50 sm:-ml-36">
-                <img src={slider.img} alt={slider.title} className="sm:-mt-10 sm:h-md:w-[350px] sm:h-sm:w-[250px] sm:h-sm:h-fit sm:w-[250px] sm:mr-10 w-24 sm:block inline-block" />
-                <div className="sm:w-[28rem] sm:px-0 px-10">
-                  <h2 className="font-bold sm:h-sm:text-5xl text-3xl sm:h-md:my-7 sm:h-sm:my-5 my-3 uppercase drop-shadow-regular">
-                    {slider.title}
-                  </h2>
-                  <p className="text-justify drop-shadow-regular h-md:text-lg sm:h-md:min-h-[225px] sm:h-sm:min-h-[225px] min-h-[225px]">{t(slider.description)}</p>
 
-                  <div className="flex items-center gap-4 md:h-md:mt-16 md:h-sm:mt-4">
-                    <img src={slider.medal} alt={`${slider.title} medal`} className="w-32" />
-                    <h5 className="font-bold text-4xl w-60 sm:text-green-100 text-gold uppercase">
-                      {t('medals_awards')}
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-
-      <div
-        className="w-[280px] place-items-center sm:inline-grid hidden"
-        style={{
-          perspective: '300px',
-        }}
-      >
-        {transition((_, stage) => (
-          <div
-            className="absolute right-20 top-20 text-center duration-300"
+      <div className="flex grid-cols-2 flex-col-reverse gap-4 px-5 pt-12 text-lg font-light md:px-10 2xl:px-40 h-xs:lg:grid h-md:lg:px-32">
+        <animated.div
+          className="mb-16 text-justify text-green-300 h-xs:lg:mb-0 h-xs:lg:text-white-50"
+          style={textAnimation}
+        >
+          <p className="mb-5">{t('home.paragraph1')}</p>
+          <p className="mb-5">{t('home.paragraph2')}</p>
+          <p>{t('home.paragraph3')}</p>
+        </animated.div>
+        <div className="flex flex-row justify-center">
+          <animated.img
+            style={bottle20Animation}
+            src={Bottle20Anniversary}
+            className="-mr-10 h-full w-40 h-xs:md:ml-0 h-xs:lg:h-fit h-sm:lg:ml-auto h-md:sm:w-96 h-md:md:-mr-28 h-md:lg:ml-28 h-md:lg:w-60 h-md:2xl:ml-40"
+            alt="Ron centenario 20"
+          />
+          <animated.img
             style={{
-              opacity: stage === 'enter' ? 1 : 0,
-              transform: {
-                from: 'translateX(100%) scale(1)',
-                enter: 'translateX(0%)',
-                leave: 'translateX(-400%) scale(1.3) translateY(20%)',
-              }[stage],
+              ...bottle30Animation,
+              transform: bottle30Animation.opacity.to({
+                range: [0, 0.5, 0.7, 1],
+                output: ['translate(200%, -25%)', 'translate(-75%, -15%)', 'translate(-65%, -5%)', 'translate(0, 0)'],
+              }),
             }}
-          >
-            <img src={nextSlider.img} alt={nextSlider.title} className="-mt-16 h-md:xl:w-56 h-sm:xl:w-40 h-md:w-44 w-36" />
-          </div>
-        ))}
+            src={Bottle30Anniversary}
+            className="z-10 -mr-10 mt-28 h-full w-40 h-xs:lg:h-fit h-md:sm:w-96 h-md:md:-mr-28 h-md:lg:w-60"
+            alt="Ron centenario 30"
+          />
+          <animated.img
+            style={bottle25Animation}
+            src={Bottle25Anniversary}
+            className="h-full w-36 h-xs:lg:h-fit h-md:sm:w-96 h-md:lg:w-52"
+            alt="Ron centenario 25"
+          />
+        </div>
       </div>
-      <button
-        className="absolute top-32 h-md:top-64 h-sm:top-48 right-0 2xl:h-md:left-[60rem] xl:h-md:left-[55rem] sm:left-[45rem] mx-auto w-fit"
-        onClick={handleNext}
-        type="button"
-      >
-        <img src={RightArrow} alt="ArrowNarrowRight" className="w-20" />
-      </button>
     </div>
   );
 };

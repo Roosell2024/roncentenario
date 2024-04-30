@@ -9,17 +9,18 @@ export const OurWorld = () => {
   const { t } = useTranslation();
   return (
     <section className="lg:px-20 relative">
-      <div className="absolute left-1/2 top-36 transform-50">
-        <AgedByNatureLogo className="w-96 h-96" />
+      <div className="absolute md:left-0 md:right-0 md:-top-60 top-10 md:transform-50 md:ml-0 ml-4 mx-auto text-center">
+        <AgedByNatureLogo className="sm:w-80 sm:h-80 w-52 inline-block" />
       </div>
-      <div className="pt-28 sm:px-36 mt-64 sm:text-left text-center">
-        <h1 className="font-bold text-6xl sm:w-72 text-gold uppercase">{t('menu.our_world')}</h1>
+      <div className="sm:px-36 pt-48 md:pt-28 md:px-5 xs:px-12 sm:mb-44 md:text-left text-center md:mt-64">
+        <h1 className="uppercase font-bold md:text-6xl text-5xl md:w-96 w-80 text-gold inline-block">{t('menu.our_world')}</h1>
       </div>
+
       {/* Medals */}
-      <WorldOfMedals/>
-      <MapaMundi/>
-      <Events/>
-      <News/>
+      <WorldOfMedals />
+      <MapaMundi />
+      <Events />
+      <News />
     </section>
   );
 };

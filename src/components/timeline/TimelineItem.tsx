@@ -1,4 +1,6 @@
+import { useMediaQuery } from '@uidotdev/usehooks';
 import { useTranslation } from 'react-i18next';
+import { mobileBreakpoint } from '../../config/constants';
 
 interface Props {
   year: string;
@@ -6,13 +8,14 @@ interface Props {
   image: string;
   width: number;
   lastOne: boolean;
-  isLargeDevice: boolean;
 }
 
 export const TimelineItem: React.FC<Props> = ({ year, image, text, width, lastOne }) => {
   const { t } = useTranslation();
+  const isSmallDevice = useMediaQuery(mobileBreakpoint);
+
   return (
-    <div className="text-gold relative h-[500px]" style={{ width }}>
+    <div className="text-gold relative sm:h-[500px] h-[650px]" style={{ width: lastOne && isSmallDevice ? '400px' : width }}>
       <div className="flex justify-center items-end h-[205px]">
         <img src={image} alt={`${year}_image`} className="inline-block" />
       </div>
@@ -26,7 +29,7 @@ export const TimelineItem: React.FC<Props> = ({ year, image, text, width, lastOn
         }`}
       />
 
-      <div className="absolute top-[16rem] p-4">
+      <div className="absolute top-[16rem] p-4 text-center w-full">
         <time className="text-lg font-semibold">{year}</time>
         <p>{t(text)}</p>
       </div>
