@@ -230,7 +230,11 @@
         "message": "Votre question ou commentaire",
         "send": "Envoyer",
         "clean": "Supprimer",
-        "phone_number": "Centrale téléphonique"
+        "phone_number": "Centrale téléphonique",
+        "file": "Fichier",
+        "select_file": "Sélectionner le fichier",
+        "file_size_error": "La taille du fichier ne doit pas dépasser 5 Mo",
+        "file_type_error": "Le type de fichier n'est pas autorisé"
     },
     "our_world": {
         "world_medals": "Monde des médailles",

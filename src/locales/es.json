@@ -230,7 +230,11 @@
         "message": "Tu pregunta o comentario",
         "send": "Enviar",
         "clean": "Borrar",
-        "phone_number": "Central Telefónica"
+        "phone_number": "Central Telefónica",
+        "file": "Archivo",
+        "select_file": "Seleccionar Archivo",
+        "file_size_error": "El archivo no puede ser mayor a 5MB",
+        "file_type_error": "El archivo debe ser de tipo: pdf, doc, docx, xls, xlsx, png, jpg, jpeg."
     },
     "our_world": {
         "world_medals": "Mundo de Medallas",
